@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arch Move</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js" defer></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="header">
+        <div class="first_container">
+            <div class="logo">
+                <div>
+                    <img src="./images/logo-arch.png" alt="logo">
+                </div>
+            </div>
+            <!-- Бургер меню, для адаптивности. Под размеры: 768px - 425px - 375px -->
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox">
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="#">Design Gallery</a></li>
+                    <li><a class="menu__item" href="#">List of Architect</a></li>
+                    <li><a class="menu__item" href="#">Articles</a></li>
+                    <li><a class="menu__item" href="#">How it Works</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="second_container">
+            <div>
+                <img src="./images/лупа.png" alt="magnifier">
+            </div>
+            <!-- Тут нужно написать Модальное окно для кнопки. Окно заполнения данных(form) -->
+            <div>
+                <button>
+                    Sign In
+                </button>
+                <button class="active">
+                    Sugn Up
+                </button>
+                <!-- Модальное окно -->
+                <div class="modal">
+                    <form action="">
+                        <input type="name" class="name" placeholder="Name">
+                        <input type="Email" class="email" placeholder="Email">
+                        <input type="address" class="address" placeholder="Address">
+                        <input type="phone" class="phone" placeholder="Phone">
+                        <button id="close_window">
+                            Close window
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MAIN -->
+    <div class="main">
+        <div class="main_heading">
+            <div>
+                <h1>
+                    Build Your Dream <span>House</span>
+                </h1>
+            </div>
+        </div>
+        <div class="main_big_container">
+            <div class="elements_container">
+                <div>
+                    <p>
+                        The first and most trusted marketplace of design & build house in The World. 100% guaranteed Build safe, comfortable and transparent with a project management for the best result
+                    </p>
+                </div>
+                <div class="elements_button">
+                    <div><!-- Добавляем скрипт, который будет менять цвет кнопки -->
+                        <button>
+                            Free Consultation
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="main_image">
+                <div>
+                    <img src="./images/main-image.png" alt="furniture">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ROOMS -->
+    <div class="rooms">
+        <div class="build">
+            <div>
+                <h2>
+                    Build professional valuable room for you
+                </h2>
+            </div>
+        </div>
+        <div class="rooms_images">
+            <div>
+                <img src="./images/img-01.png" alt="room">
+            </div>
+            <div>
+                <img src="./images/img-02.png" alt="room">
+            </div>
+            <div>
+                <img src="./images/img-03.png" alt="room">
+            </div>
+        </div>
+    </div>
+    <!-- ARCHMOVE -->
+    <div class="archmove">
+        <div class="archmove_heading">
+            <div>
+                <h2>
+                    Build your needs with Archmove
+                </h2>
+            </div>
+        </div>
+        <div class="archmove_big_container">
+            <div class="archmove_image">
+                <div>
+                    <img src="./images/peoples.png" alt="peoples">
+                </div>
+            </div>
+            <div class="archmove_services">
+                <div class="guaranted">
+                    <div class="guaranted_image">
+                        <div>
+                            <img src="./images/Group 7.png" alt="image">
+                        </div>
+                    </div>
+                    <div class="about_guaranted">
+                        <div>
+                            <p>
+                                <span>100% guaranteed project completion</span>
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                Build safe, comfortable and transparent with a project management application with a joint account.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="additional">
+                    <div class="additional_image">
+                        <div>
+                            <img src="./images/Group 2.png" alt="image">
+                        </div>
+                    </div>
+                    <div class="about_additional">
+                        <div>
+                            <p>
+                                <span>No additional fees</span>
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                There are no hidden costs. The value of the offer you get is the value you paid.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="escort">
+                    <div class="escort_image">
+                        <div>
+                            <img src="./images/Group 3.png" alt="image">
+                        </div>
+                    </div>
+                    <div class="about_escort">
+                        <div>
+                            <p>
+                                <span>Get escort from the Team</span>
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                Monitor reports from the Arsitag team who check directly in the field.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="archmove_button">
+                    <div><!-- Добавляем скрипт, который будет менять цвет кнопки -->
+                        <button>
+                            Free Consultaion
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PROJECT_ARCHMOVE -->
+    <div class="project_archmove">
+        <div class="sound_too">
+            <div>
+                <h2>
+                    Sound Too Good To Be True?
+                </h2>
+            </div>
+        </div>
+        <div class="adam_morph">
+            <div class="empty">
+
+            </div>
+            <div class="adam_image">
+                <div>
+                    <img src="./images/“.png" alt="image">
+                </div>
+            </div>
+            <div class="adam_content">
+                <div>
+                    <p>
+                        We just wanted to thank you for this fantastic website! We are so grateful for being able to advertise our Petite cabin and receive feedback from people from all over the U.S. and even further.
+                    </p>
+                </div>
+                <div class="adam_ceo">
+                    <div>
+                        <p>
+                            <span>Adam Morph</span>— CEO Alfatech
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project_big_container">
+            <div class="project_image">
+                <div>
+                    <img src="./images/image 1.png" alt="house">
+                </div>
+            </div>
+            <div class="dream">
+                <div>
+                    <p>
+                        Realize your dream project with <span>Archmove</span>
+                    </p>
+                </div>
+                <div><!-- Добавляем скрипт, который будет менять цвет кнопки -->
+                    <button>
+                        Free Consultaion
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- OUR_PARTNERS -->
+    <div class="our_partners">
+        <div class="partners_heading">
+            <div>
+                <h2>
+                    Our Partners
+                </h2>
+            </div>
+        </div>
+        <div class="partners_logos">
+            <div>
+                <img src="./images/logo-1.png" class="the_american" alt="logo1">
+            </div>
+            <div>
+                <img src="./images/logo-2.png" class="cf_moller" alt="logo2">
+            </div>
+            <div>
+                <img src="./images/logo-3.png" class="american_sociaty" alt="logo3">
+            </div>
+            <div>
+                <img src="./images/logo-4.png" class="stir" alt="logo4">
+            </div>
+            <div>
+                <img src="./images/logo-5.png" class="marketing" alt="logo5">
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="footer_menu">
+            <div>
+                <ul class="footer_nav">
+                    <li>
+                        Design Gallery
+                    </li>
+                    <li>
+                        List of Architect
+                    </li>
+                    <li>
+                        Articles
+                    </li>
+                    <li>
+                        How it Works
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_logo">
+            <div>
+                <img src="./images/logo-arch.png" alt="logo">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

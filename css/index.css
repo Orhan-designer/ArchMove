@@ -704,13 +704,12 @@ html {
   border-radius: 5px;
   border: none;
   outline: none;
-  background: #fd665e;
-  /*background: linear-gradient(45deg, red, blue);*/
+  background: linear-gradient(45deg, red, blue);
   color: white;
   font-size: 0.8rem;
 }
 .main .main_big_container .elements_button .color_blue {
-  background: linear-gradient(45deg, red, blue);
+  background: linear-gradient(65deg, blue, red);
 }
 .main .main_big_container .main_image div img {
   width: 50vw;
@@ -860,7 +859,7 @@ html {
     align-items: center;
   }
   .main .main_big_container .elements_container div {
-    width: 66vw;
+    width: 75vw;
   }
   .main .main_big_container .elements_container div p {
     font-size: 0.9rem;
@@ -872,8 +871,8 @@ html {
     margin: auto;
   }
   .main .main_big_container .elements_button div button {
-    width: 30vw;
-    height: 8vw;
+    width: 33vw;
+    height: 10vw;
     font-size: 0.75rem;
   }
   .main .main_big_container .main_image div img {
@@ -968,6 +967,26 @@ html {
   }
   .rooms .build div {
     width: 80vw;
+  }
+  .rooms .build div h2 {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  .rooms .rooms_images {
+    width: 100vw;
+  }
+  .rooms .rooms_images img {
+    width: 28vw;
+    height: 38vw;
+  }
+}
+@media (max-width: 375px) {
+  .rooms body,
+  .rooms html {
+    font-size: 1rem;
+  }
+  .rooms .build div {
+    width: 90vw;
   }
   .rooms .build div h2 {
     font-size: 1.7rem;
@@ -1078,7 +1097,7 @@ html {
 .archmove .archmove_big_container .archmove_services .archmove_button div button {
   width: 8vw;
   height: 2vw;
-  background: #fd665e;
+  background: linear-gradient(45deg, red, blue);
   color: white;
   font-size: 0.8rem;
   border: none;
@@ -1086,7 +1105,7 @@ html {
   border-radius: 5px;
 }
 .archmove .archmove_big_container .archmove_services .archmove_button div .color_blue {
-  background: linear-gradient(45deg, red, blue);
+  background: linear-gradient(65deg, blue, red);
 }
 @media (max-width: 1440px) {
   .archmove body,
@@ -1303,39 +1322,57 @@ html {
   .archmove .archmove_big_container .archmove_services {
     width: 90vw;
   }
+  .archmove .archmove_big_container .archmove_services .guaranted {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .archmove .archmove_big_container .archmove_services .guaranted .guaranted_image img {
     width: 10vw;
     height: 11vw;
   }
   .archmove .archmove_big_container .archmove_services .guaranted .about_guaranted div {
-    width: 36vw;
+    width: 60vw;
   }
   .archmove .archmove_big_container .archmove_services .guaranted .about_guaranted div p {
     font-size: 0.85rem;
+    text-align: center;
+  }
+  .archmove .archmove_big_container .archmove_services .additional {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .archmove .archmove_big_container .archmove_services .additional .additional_image img {
     width: 10vw;
     height: 11vw;
   }
   .archmove .archmove_big_container .archmove_services .additional .about_additional div {
-    width: 36vw;
+    width: 60vw;
   }
   .archmove .archmove_big_container .archmove_services .additional .about_additional div p {
     font-size: 0.85rem;
+    text-align: center;
+  }
+  .archmove .archmove_big_container .archmove_services .escort {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .archmove .archmove_big_container .archmove_services .escort .escort_image img {
     width: 10vw;
     height: 11vw;
   }
   .archmove .archmove_big_container .archmove_services .escort .about_escort div {
-    width: 36vw;
+    width: 60vw;
   }
   .archmove .archmove_big_container .archmove_services .escort .about_escort div p {
     font-size: 0.85rem;
+    text-align: center;
   }
   .archmove .archmove_big_container .archmove_services .archmove_button div button {
     width: 31vw;
-    height: 8vw;
+    height: 9vw;
     font-size: 0.8rem;
   }
 }
@@ -1348,10 +1385,10 @@ html {
     width: 75.2vw;
   }
   .archmove .archmove_heading div {
-    width: 60vw;
+    width: 75vw;
   }
   .archmove .archmove_heading div h2 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
   .archmove .archmove_big_container {
     width: 90vw;
@@ -1372,7 +1409,7 @@ html {
     height: 11vw;
   }
   .archmove .archmove_big_container .archmove_services .guaranted .about_guaranted div {
-    width: 42vw;
+    width: 60vw;
   }
   .archmove .archmove_big_container .archmove_services .guaranted .about_guaranted div p {
     font-size: 0.85rem;
@@ -1382,7 +1419,7 @@ html {
     height: 11vw;
   }
   .archmove .archmove_big_container .archmove_services .additional .about_additional div {
-    width: 42vw;
+    width: 60vw;
   }
   .archmove .archmove_big_container .archmove_services .additional .about_additional div p {
     font-size: 0.85rem;
@@ -1392,15 +1429,15 @@ html {
     height: 11vw;
   }
   .archmove .archmove_big_container .archmove_services .escort .about_escort div {
-    width: 42vw;
+    width: 60vw;
   }
   .archmove .archmove_big_container .archmove_services .escort .about_escort div p {
     font-size: 0.85rem;
   }
   .archmove .archmove_big_container .archmove_services .archmove_button div button {
-    width: 30vw;
-    height: 8vw;
-    font-size: 0.75rem;
+    width: 33vw;
+    height: 10vw;
+    font-size: 0.8rem;
   }
 }
 .project_archmove .sound_too {
@@ -1612,10 +1649,10 @@ html {
     width: 90vw;
   }
   .project_archmove .sound_too div {
-    width: 57vw;
+    width: 70vw;
   }
   .project_archmove .sound_too div h2 {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
   .project_archmove .adam_morph {
     width: 90vw;
@@ -1628,7 +1665,7 @@ html {
     width: 82vw;
   }
   .project_archmove .adam_morph .adam_content div {
-    width: 79vw;
+    width: 82vw;
   }
   .project_archmove .adam_morph .adam_content div p {
     font-size: 1rem;
@@ -1669,7 +1706,7 @@ html {
 .project_archmove .project_big_container .dream button {
   width: 8vw;
   height: 2vw;
-  background: #fd665e;
+  background: linear-gradient(45deg, red, blue);
   color: white;
   font-size: 0.8rem;
   border: none;
@@ -1677,7 +1714,7 @@ html {
   border-radius: 5px;
 }
 .project_archmove .project_big_container .dream .color_blue {
-  background: linear-gradient(45deg, red, blue);
+  background: linear-gradient(65deg, blue, red);
 }
 @media screen and (max-width: 1440px) {
   .project_archmove body,
@@ -1829,15 +1866,15 @@ html {
     width: 90vw;
   }
   .project_archmove .project_big_container .dream div {
-    width: 80vw;
+    width: 85vw;
   }
   .project_archmove .project_big_container .dream div p {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
   .project_archmove .project_big_container .dream button {
-    width: 32vw;
-    height: 8vw;
-    font-size: 0.75rem;
+    width: 33vw;
+    height: 10vw;
+    font-size: 0.8rem;
   }
 }
 .our_partners {
@@ -2068,6 +2105,40 @@ html {
   width: 3.3vw;
   height: 1.5vw;
 }
+.footer .developer {
+  width: 20vw;
+}
+.footer .developer div p {
+  font-size: 1rem;
+  color: #585858;
+}
+.footer .developer div p span {
+  color: brown;
+}
+@media screen and (max-width: 1440px) {
+  body,
+  html {
+    font-size: 1rem;
+  }
+  .footer .footer_menu {
+    width: 35vw;
+    display: flex;
+    justify-content: center;
+  }
+  .footer .footer_menu .footer_nav li {
+    font-size: 0.85rem;
+  }
+  .footer .footer_logo img {
+    width: 4.5vw;
+    height: 2vw;
+  }
+  .footer .developer {
+    width: 20vw;
+  }
+  .footer .developer div p {
+    font-size: 1rem;
+  }
+}
 @media screen and (max-width: 1024px) {
   body,
   html {
@@ -2079,11 +2150,18 @@ html {
     justify-content: center;
   }
   .footer .footer_menu .footer_nav li {
+    text-align: center;
     font-size: 0.85rem;
   }
   .footer .footer_logo img {
     width: 4.5vw;
     height: 2vw;
+  }
+  .footer .developer {
+    width: 25vw;
+  }
+  .footer .developer div p {
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -2098,6 +2176,13 @@ html {
     width: 9vw;
     height: 4vw;
   }
+  .footer .developer {
+    width: 30vw;
+  }
+  .footer .developer div p {
+    font-size: 1rem;
+    line-height: 25px;
+  }
 }
 @media screen and (max-width: 425px) {
   body,
@@ -2107,9 +2192,20 @@ html {
   .footer .footer_menu {
     display: none;
   }
+  .footer .footer_logo {
+    display: none;
+  }
   .footer .footer_logo img {
     width: 12.5vw;
     height: 5.5vw;
+  }
+  .footer .developer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+  .footer .developer div p {
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 375px) {
@@ -2117,11 +2213,14 @@ html {
   html {
     font-size: 1rem;
   }
-  .footer .footer_menu {
-    display: none;
-  }
   .footer .footer_logo img {
     width: 13.5vw;
     height: 6.5vw;
+  }
+  .footer .developer {
+    width: 100vw;
+  }
+  .footer .developer div p {
+    font-size: 1rem;
   }
 }

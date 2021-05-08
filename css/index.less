@@ -722,8 +722,7 @@ body, html {
                     border-radius: 5px;
                     border: none;
                     outline: none;
-                    background: #fd665e;
-                    /*background: linear-gradient(45deg, red, blue);*/
+                    background: linear-gradient(45deg, red, blue);
                     color: white;
                     font-size: .80rem;
                 }
@@ -731,7 +730,7 @@ body, html {
             }
             /*Для скрипта, который будет менять цвет кнопки*/
             .color_blue {
-                background: linear-gradient(45deg, red, blue);
+                background: linear-gradient(65deg, blue, red);
             }
         }
         .main_image {
@@ -919,7 +918,7 @@ body, html {
                 flex-direction: column;
                 align-items: center;
                 div {
-                    width: 66vw;
+                    width: 75vw;
                     p {
                         font-size: .90rem;
                         text-align: center;
@@ -932,8 +931,8 @@ body, html {
                     justify-content: center;
                     margin: auto;
                     button {
-                        width: 30vw;
-                        height: 8vw;
+                        width: 33vw;
+                        height: 10vw;
                         font-size: .75rem;
                     }
                 }
@@ -1061,6 +1060,28 @@ body, html {
             }
         }
     }
+    @media (max-width: 375px) {
+        body, html {
+            font-size: 1rem;
+        }
+        .build {
+
+            div {
+                width: 90vw;
+                h2 {
+                    font-size: 1.7rem;
+                    text-align: center;
+                }
+            }
+        }
+        .rooms_images {
+            width: 100vw;
+            img {
+                width: 28vw;
+                height: 38vw;
+            }
+        }
+    }
 }
 
 /***ARCHMOVE***/
@@ -1171,7 +1192,7 @@ body, html {
                     button {
                         width: 8vw;
                         height: 2vw;
-                        background: #fd665e;
+                        background: linear-gradient(45deg, red, blue);
                         color: white;
                         font-size: .80rem;
                         border: none;
@@ -1179,7 +1200,7 @@ body, html {
                         border-radius: 5px;
                     }
                     .color_blue {//Класс для скрипта.
-                        background: linear-gradient(45deg, red, blue);
+                        background: linear-gradient(65deg, blue, red);
                     }
                 }
             }
@@ -1522,7 +1543,9 @@ body, html {
             .archmove_services {
                 width: 90vw;
                 .guaranted {
-               
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
                     .guaranted_image {
                        
                         img {
@@ -1533,15 +1556,18 @@ body, html {
                     .about_guaranted {
                        
                         div {
-                            width: 36vw;           
+                            width: 60vw;           
                             p {
-                                font-size: .85rem;             
+                                font-size: .85rem;  
+                                text-align: center;           
                             }
                         }
                     }
                 }
                 .additional {
-          
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
                     .additional_image {
                       
                         img {
@@ -1552,15 +1578,18 @@ body, html {
                     .about_additional {
                         
                         div {                          
-                            width: 36vw;                          
+                            width: 60vw;                          
                             p {
                                 font-size: .85rem;
+                                text-align: center;
                             }
                         }
                     }
                 }
                 .escort {
-                 
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
                     .escort_image {
                        
                         img {
@@ -1571,9 +1600,10 @@ body, html {
                     .about_escort {
                         
                         div {
-                            width: 36vw;
+                            width: 60vw;
                             p {
                                 font-size: .85rem;
+                                text-align: center;
                             }
                         }
                     }
@@ -1584,7 +1614,7 @@ body, html {
     
                         button {
                             width: 31vw;
-                            height: 8vw;
+                            height: 9vw;
                             font-size: .80rem;
                         }
                     }
@@ -1599,9 +1629,9 @@ body, html {
         .archmove_heading {
             width: 75.2vw;
             div {
-                width: 60vw;
+                width: 75vw;
                 h2 {
-                    font-size: 1.8rem;
+                    font-size: 1.7rem;
                 }
             }
         }
@@ -1621,7 +1651,7 @@ body, html {
             .archmove_services {
                 width: 90vw;
                 .guaranted {
-               
+                    
                     .guaranted_image {
                        
                         img {
@@ -1630,17 +1660,17 @@ body, html {
                         }
                     }
                     .about_guaranted {
-                       
+
                         div {
-                            width: 42vw;           
+                            width: 60vw;          
                             p {
-                                font-size: .85rem;             
+                                font-size: .85rem;          
                             }
                         }
                     }
                 }
                 .additional {
-          
+
                     .additional_image {
                       
                         img {
@@ -1651,7 +1681,7 @@ body, html {
                     .about_additional {
                         
                         div {                          
-                            width: 42vw;                          
+                            width: 60vw;                          
                             p {
                                 font-size: .85rem;
                             }
@@ -1659,7 +1689,7 @@ body, html {
                     }
                 }
                 .escort {
-                 
+
                     .escort_image {
                        
                         img {
@@ -1670,7 +1700,7 @@ body, html {
                     .about_escort {
                         
                         div {
-                            width: 42vw;
+                            width: 60vw;
                             p {
                                 font-size: .85rem;
                             }
@@ -1682,9 +1712,9 @@ body, html {
                     div {
     
                         button {
-                            width: 30vw;
-                            height: 8vw;
-                            font-size: .75rem;
+                            width: 33vw;
+                            height: 10vw;
+                            font-size: .80rem;
                         }
                     }
                 }
@@ -1951,9 +1981,9 @@ body, html {
         .sound_too {
             width: 90vw;
             div {
-                width: 57vw;
+                width: 70vw;
                 h2 {
-                    font-size: 1.6rem;
+                    font-size: 1.7rem;
                 }
             }
         }
@@ -1972,7 +2002,7 @@ body, html {
             .adam_content {
                 width: 82vw;
                 div {
-                    width: 79vw;              
+                    width: 82vw;              
                     p {
                         font-size: 1rem;
                     }
@@ -2019,7 +2049,7 @@ body, html {
             button {
                 width: 8vw;
                 height: 2vw;
-                background: #fd665e;
+                background: linear-gradient(45deg, red, blue);
                 color: white;
                 font-size: .80rem;
                 border: none;
@@ -2027,7 +2057,7 @@ body, html {
                 border-radius: 5px;
             }
             .color_blue {//Класс для скрипта.
-                background: linear-gradient(45deg, red, blue);
+                background: linear-gradient(65deg, blue, red);
             }
         }
     }
@@ -2174,15 +2204,15 @@ body, html {
             .dream {
                 width: 90vw;
                 div {
-                    width: 80vw;
+                    width: 85vw;
                     p {
-                        font-size: 1.8rem;  
+                        font-size: 1.7rem;  
                     }
                 }
                 button {
-                    width: 32vw;
-                    height: 8vw;
-                    font-size: .75rem;
+                    width: 33vw;
+                    height: 10vw;
+                    font-size: .80rem;
                 }
             }
         }
@@ -2417,15 +2447,29 @@ body, html {
         width: 3.3vw;
         height: 1.5vw;
     }
+    .developer {
+        
+        width: 20vw;
+        div {
+
+            p {
+                font-size: 1rem;
+                color: rgba(88, 88, 88, 1);
+                span {
+                    color: brown;
+                }
+            }
+        }
+    }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1440px) {
     body, html {
         font-size: 1rem;
     }
     .footer {
 
         .footer_menu {
-            width: 45vw;
+            width: 35vw;
             display: flex;
             justify-content: center;
             .footer_nav {
@@ -2442,6 +2486,52 @@ body, html {
             img {
                 width: 4.5vw;
                 height: 2vw;
+            }
+        }
+        .developer {
+            width: 20vw;
+            div {
+    
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+    body, html {
+        font-size: 1rem;
+    }
+    .footer {
+
+        .footer_menu {
+            width: 45vw;
+            display: flex;
+            justify-content: center;
+            .footer_nav {
+
+            }
+            .footer_nav li {
+                text-align: center;
+                font-size: .85rem;
+            }
+            
+        }
+        .footer_logo {
+            
+            img {
+                width: 4.5vw;
+                height: 2vw;
+            }
+        }
+        .developer {
+            width: 25vw;
+            div {
+    
+                p {
+                    font-size: 1rem;
+                }
             }
         }
     }
@@ -2462,6 +2552,16 @@ body, html {
                 height: 4vw;
             }
         }
+        .developer {
+            width: 30vw;
+            div {
+    
+                p {
+                    font-size: 1rem;
+                    line-height: 25px;
+                }
+            }
+        }
     }
 }
 @media screen and (max-width: 425px) {
@@ -2474,10 +2574,21 @@ body, html {
             display: none;
         }
         .footer_logo {
-
+            display: none;
             img {
                 width: 12.5vw;
                 height: 5.5vw;
+            }
+        }
+        .developer {
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            div {
+    
+                p {
+                    font-size: 1rem;
+                }
             }
         }
     }
@@ -2488,14 +2599,20 @@ body, html {
     }
     .footer {
 
-        .footer_menu {
-            display: none;
-        }
         .footer_logo {
 
             img {
                 width: 13.5vw;
                 height: 6.5vw;
+            }
+        }
+        .developer {
+            width: 100vw;
+            div {
+    
+                p {
+                    font-size: 1rem;
+                }
             }
         }
     }

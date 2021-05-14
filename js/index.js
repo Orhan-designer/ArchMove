@@ -1,4 +1,4 @@
-function Modal() {
+function Modal() { //Функция модального окна!
     let block = document.querySelector('.modal');
     let button = document.getElementsByClassName('active');
     
@@ -19,13 +19,12 @@ function Modal() {
         console.log(container);
         let elem = document.querySelector(container);
         elem.style.display = 'none';
-
     }
 }
 Modal();
 
 
-function changeColor() {
+function changeColor() { //Функция для автоматической смены цвета, для кнопки!
     let array = document.getElementsByTagName('button');
     
     for (let i = 0; i < array.length; i++) {
@@ -34,6 +33,55 @@ function changeColor() {
 
 }
 setInterval(changeColor, 1000);
+
+
+/*let slideIndex = 1; //Функция для слайдера!
+showSlides(slideIndex);
+
+function plusSlides(n) {
+
+    showSlides(slideIndex += n);
+
+}
+
+function currentSlide(n) {
+
+    showSlides(slideIndex = n);
+
+}
+
+function showSlides(n) {
+
+    let i;
+    let slides = document.getElementsByClassName("slide-image");
+
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+
+}*/ 
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("slide-image");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slideIndex++;
+
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+} 
 
 /*let mainContainer = document.getElementById('container');
 let count = 0; 

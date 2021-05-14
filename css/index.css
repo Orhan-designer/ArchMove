@@ -196,17 +196,19 @@ html {
     font-size: 1rem;
   }
   .header .first_container {
-    width: 80vw;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
   }
   .header .first_container .logo div {
-    width: 40vw;
+    width: 22vw;
   }
   .header .first_container .logo img {
     width: 12.5vw;
     height: 5.5vw;
   }
   .header .first_container .hamburger-menu {
-    width: 35vw;
+    width: 14vw;
     display: flex;
     justify-content: center;
     /*Скрываем чекбокс*/
@@ -287,17 +289,17 @@ html {
     font-size: 1rem;
   }
   .header .first_container {
-    width: 80vw;
+    width: 100vw;
   }
   .header .first_container .logo div {
-    width: 40vw;
+    width: 23vw;
   }
   .header .first_container .logo img {
     width: 13.5vw;
     height: 6.5vw;
   }
   .header .first_container .hamburger-menu {
-    width: 35vw;
+    width: 15vw;
     /*Скрываем чекбокс*/
     /*Стилизуем кнопку*/
     /*Добавляем гамбургер*/
@@ -591,8 +593,6 @@ html {
   }
   .header {
     padding: 10px 0;
-    display: flex;
-    justify-content: center;
   }
 }
 /***MAIN***/
@@ -892,15 +892,24 @@ html {
 .rooms .build div h2 {
   font-size: 2.5rem;
 }
-.rooms .rooms_images {
-  width: 77vw;
+.rooms .slideshow-container {
+  width: 50vw;
   margin: auto;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
-.rooms .rooms_images img {
-  width: 16vw;
-  height: 24vw;
+.rooms .slideshow-container .slide-image img {
+  width: 28vw;
+  height: 40vw;
+}
+.rooms .slideshow-container .prev,
+.rooms .slideshow-container .next {
+  display: none;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
 }
 @media (max-width: 1440px) {
   .rooms body,
@@ -972,12 +981,15 @@ html {
     font-size: 1.7rem;
     text-align: center;
   }
-  .rooms .rooms_images {
-    width: 100vw;
+  .rooms .slideshow-container .prev {
+    margin: 0 20px 0 0;
   }
-  .rooms .rooms_images img {
-    width: 28vw;
-    height: 38vw;
+  .rooms .slideshow-container .slide-image img {
+    width: 90vw;
+    height: 120vw;
+  }
+  .rooms .slideshow-container .next {
+    margin: 0 0 0 20px;
   }
 }
 @media (max-width: 375px) {
@@ -991,13 +1003,6 @@ html {
   .rooms .build div h2 {
     font-size: 1.7rem;
     text-align: center;
-  }
-  .rooms .rooms_images {
-    width: 100vw;
-  }
-  .rooms .rooms_images img {
-    width: 28vw;
-    height: 38vw;
   }
 }
 /***ARCHMOVE***/
@@ -1624,8 +1629,8 @@ html {
     width: 90vw;
   }
   .project_archmove .adam_morph .adam_image div img {
-    width: 6vw;
-    height: 4vw;
+    width: 3vw;
+    height: 2vw;
   }
   .project_archmove .adam_morph .adam_content {
     width: 80vw;
@@ -1658,8 +1663,8 @@ html {
     width: 90vw;
   }
   .project_archmove .adam_morph .adam_image div img {
-    width: 6vw;
-    height: 4vw;
+    width: 3vw;
+    height: 2vw;
   }
   .project_archmove .adam_morph .adam_content {
     width: 82vw;
@@ -2046,6 +2051,35 @@ html {
   }
 }
 @media screen and (max-width: 425px) {
+  .our_partners body,
+  .our_partners html {
+    font-size: 1rem;
+  }
+  .our_partners .partners_logos {
+    width: 72vw;
+  }
+  .our_partners .partners_logos .the_american {
+    width: 15vw;
+    height: 7vw;
+  }
+  .our_partners .partners_logos .cf_moller {
+    width: 9vw;
+    height: 7vw;
+  }
+  .our_partners .partners_logos .american_sociaty {
+    width: 19vw;
+    height: 6vw;
+  }
+  .our_partners .partners_logos .stir {
+    width: 9vw;
+    height: 5.3vw;
+  }
+  .our_partners .partners_logos .marketing {
+    width: 10vw;
+    height: 6vw;
+  }
+}
+@media screen and (max-width: 375px) {
   .our_partners body,
   .our_partners html {
     font-size: 1rem;

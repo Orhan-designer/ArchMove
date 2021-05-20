@@ -1,4 +1,5 @@
-function Modal() { //Функция модального окна!
+//Функция модального окна!
+function Modal() { 
     let block = document.querySelector('.modal');
     let button = document.getElementsByClassName('active');
     
@@ -23,8 +24,8 @@ function Modal() { //Функция модального окна!
 }
 Modal();
 
-
-function changeColor() { //Функция для автоматической смены цвета, для кнопки!
+//Функция для автоматической смены цвета, для кнопки!
+function changeColor() {
     let array = document.getElementsByTagName('button');
     
     for (let i = 0; i < array.length; i++) {
@@ -33,6 +34,20 @@ function changeColor() { //Функция для автоматической с
 
 }
 setInterval(changeColor, 1000);
+
+//Функция для липкого меню-бургера, при скроле на телефонах!
+window.onscroll = function() {myFunction()};
+let hamburgerMenu = document.getElementsByClassName('hamburger-menu');
+let sticky = hamburgerMenu.offsetTop;
+
+function myFunction() {
+    if (window.pageYOffset >= sticky) {
+        hamburgerMenu.classList.add('sticky');
+    } else {
+        hamburgerMenu.classList.remove('sticky');
+    }
+};
+
 
 
 /*let slideIndex = 1; //Функция для слайдера!
@@ -64,7 +79,7 @@ function showSlides(n) {
 
     slides[slideIndex - 1].style.display = "block";
 
-}*/ 
+}*/
 
 let slideIndex = 0;
 showSlides();
@@ -80,8 +95,9 @@ function showSlides() {
 
     if (slideIndex > slides.length) {slideIndex = 1}
     slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
+    
 } 
+setInterval(showSlides, 2000);// Меняется каждые 2 секунды.
 
 /*let mainContainer = document.getElementById('container');
 let count = 0; 

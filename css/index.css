@@ -49,6 +49,11 @@ html {
   text-decoration: none;
   color: #585858;
 }
+.header .first_container .hamburger-menu .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 @media (max-width: 1440px) {
   .header body,
   .header html {
@@ -246,10 +251,10 @@ html {
   }
   .header .first_container .hamburger-menu .menu__box {
     visibility: hidden;
-    width: 40vw;
-    height: 60vw;
+    width: 85vw;
+    height: 42vw;
     margin: 0;
-    padding: 40px 0;
+    padding: 10px 0;
     list-style: none;
     text-align: center;
     background-color: #ECEFF1;
@@ -336,12 +341,10 @@ html {
   .header .first_container .hamburger-menu .menu__box {
     display: block;
     visibility: hidden;
-    width: 45vw;
-    height: 68vw;
+    width: 85vw;
+    height: 42vw;
     margin: 0;
-    padding: 40px 0;
-    list-style: none;
-    text-align: center;
+    padding: 0;
     background-color: #ECEFF1;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
   }
@@ -657,7 +660,7 @@ html {
     font-size: 1rem;
   }
   .main .main_heading div {
-    width: 68vw;
+    width: 70vw;
   }
   .main .main_heading div h1 {
     font-size: 2.5rem;
@@ -820,10 +823,10 @@ html {
     align-items: center;
   }
   .main .main_big_container .elements_container div {
-    width: 58vw;
+    width: 90vw;
   }
   .main .main_big_container .elements_container div p {
-    font-size: 0.9rem;
+    font-size: 0.86rem;
     text-align: center;
   }
   .main .main_big_container .elements_button div {
@@ -859,10 +862,10 @@ html {
     align-items: center;
   }
   .main .main_big_container .elements_container div {
-    width: 75vw;
+    width: 90vw;
   }
   .main .main_big_container .elements_container div p {
-    font-size: 0.9rem;
+    font-size: 0.84rem;
     text-align: center;
   }
   .main .main_big_container .elements_button div {
@@ -975,10 +978,10 @@ html {
     font-size: 1rem;
   }
   .rooms .build div {
-    width: 80vw;
+    width: 90vw;
   }
   .rooms .build div h2 {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     text-align: center;
   }
   .rooms .slideshow-container .prev {
@@ -997,12 +1000,8 @@ html {
   .rooms html {
     font-size: 1rem;
   }
-  .rooms .build div {
-    width: 90vw;
-  }
   .rooms .build div h2 {
     font-size: 1.7rem;
-    text-align: center;
   }
 }
 /***ARCHMOVE***/
@@ -1311,7 +1310,7 @@ html {
     width: 60vw;
   }
   .archmove .archmove_heading div h2 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .archmove .archmove_big_container {
     width: 90vw;
@@ -1337,10 +1336,10 @@ html {
     height: 11vw;
   }
   .archmove .archmove_big_container .archmove_services .guaranted .about_guaranted div {
-    width: 60vw;
+    width: 90vw;
   }
   .archmove .archmove_big_container .archmove_services .guaranted .about_guaranted div p {
-    font-size: 0.85rem;
+    font-size: 1rem;
     text-align: center;
   }
   .archmove .archmove_big_container .archmove_services .additional {
@@ -1353,10 +1352,10 @@ html {
     height: 11vw;
   }
   .archmove .archmove_big_container .archmove_services .additional .about_additional div {
-    width: 60vw;
+    width: 90vw;
   }
   .archmove .archmove_big_container .archmove_services .additional .about_additional div p {
-    font-size: 0.85rem;
+    font-size: 1rem;
     text-align: center;
   }
   .archmove .archmove_big_container .archmove_services .escort {
@@ -1369,11 +1368,16 @@ html {
     height: 11vw;
   }
   .archmove .archmove_big_container .archmove_services .escort .about_escort div {
-    width: 60vw;
+    width: 90vw;
   }
   .archmove .archmove_big_container .archmove_services .escort .about_escort div p {
-    font-size: 0.85rem;
+    font-size: 1rem;
     text-align: center;
+  }
+  .archmove .archmove_big_container .archmove_services .archmove_button div {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
   }
   .archmove .archmove_big_container .archmove_services .archmove_button div button {
     width: 31vw;
@@ -1387,13 +1391,14 @@ html {
     font-size: 1rem;
   }
   .archmove .archmove_heading {
-    width: 75.2vw;
+    width: 90vw;
   }
   .archmove .archmove_heading div {
-    width: 75vw;
+    width: 90vw;
   }
   .archmove .archmove_heading div h2 {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
+    text-align: center;
   }
   .archmove .archmove_big_container {
     width: 90vw;
@@ -1413,31 +1418,22 @@ html {
     width: 10vw;
     height: 11vw;
   }
-  .archmove .archmove_big_container .archmove_services .guaranted .about_guaranted div {
-    width: 60vw;
-  }
   .archmove .archmove_big_container .archmove_services .guaranted .about_guaranted div p {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
   }
   .archmove .archmove_big_container .archmove_services .additional .additional_image img {
     width: 10vw;
     height: 11vw;
   }
-  .archmove .archmove_big_container .archmove_services .additional .about_additional div {
-    width: 60vw;
-  }
   .archmove .archmove_big_container .archmove_services .additional .about_additional div p {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
   }
   .archmove .archmove_big_container .archmove_services .escort .escort_image img {
     width: 10vw;
     height: 11vw;
   }
-  .archmove .archmove_big_container .archmove_services .escort .about_escort div {
-    width: 60vw;
-  }
   .archmove .archmove_big_container .archmove_services .escort .about_escort div p {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
   }
   .archmove .archmove_big_container .archmove_services .archmove_button div button {
     width: 33vw;
@@ -1620,29 +1616,33 @@ html {
     width: 90vw;
   }
   .project_archmove .sound_too div {
-    width: 57vw;
+    width: 90vw;
   }
   .project_archmove .sound_too div h2 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .project_archmove .adam_morph {
     width: 90vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
   .project_archmove .adam_morph .adam_image div img {
     width: 3vw;
     height: 2vw;
   }
   .project_archmove .adam_morph .adam_content {
-    width: 80vw;
+    width: 90vw;
   }
   .project_archmove .adam_morph .adam_content div {
-    width: 70vw;
+    width: 90vw;
   }
   .project_archmove .adam_morph .adam_content div p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .project_archmove .adam_morph .adam_content .adam_ceo div p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 @media screen and (max-width: 375px) {
@@ -1657,7 +1657,7 @@ html {
     width: 70vw;
   }
   .project_archmove .sound_too div h2 {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
   .project_archmove .adam_morph {
     width: 90vw;
@@ -1666,17 +1666,11 @@ html {
     width: 3vw;
     height: 2vw;
   }
-  .project_archmove .adam_morph .adam_content {
-    width: 82vw;
-  }
-  .project_archmove .adam_morph .adam_content div {
-    width: 82vw;
-  }
   .project_archmove .adam_morph .adam_content div p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .project_archmove .adam_morph .adam_content .adam_ceo div p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 .project_archmove .project_big_container {
@@ -1834,17 +1828,17 @@ html {
     width: 33vw;
   }
   .project_archmove .project_big_container .project_image img {
-    width: 60vw;
+    width: 70vw;
     height: 95vw;
   }
   .project_archmove .project_big_container .dream {
     width: 90vw;
   }
   .project_archmove .project_big_container .dream div {
-    width: 75vw;
+    width: 90vw;
   }
   .project_archmove .project_big_container .dream div p {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   .project_archmove .project_big_container .dream button {
     width: 30vw;
@@ -1864,17 +1858,11 @@ html {
     width: 33vw;
   }
   .project_archmove .project_big_container .project_image img {
-    width: 65vw;
+    width: 70vw;
     height: 100vw;
   }
-  .project_archmove .project_big_container .dream {
-    width: 90vw;
-  }
-  .project_archmove .project_big_container .dream div {
-    width: 85vw;
-  }
   .project_archmove .project_big_container .dream div p {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
   .project_archmove .project_big_container .dream button {
     width: 33vw;
@@ -1922,18 +1910,6 @@ html {
   }
   .our_partners .partners_heading div h2 {
     font-size: 2rem;
-  }
-}
-@media screen and (max-width: 425px) {
-  .our_partners body,
-  .our_partners html {
-    font-size: 1rem;
-  }
-  .our_partners .partners_heading {
-    width: 67vw;
-  }
-  .our_partners .partners_heading div h2 {
-    font-size: 1.8rem;
   }
 }
 .our_partners .partners_logos {
@@ -2108,6 +2084,36 @@ html {
     height: 6vw;
   }
 }
+@media screen and (max-width: 425px) {
+  body,
+  html {
+    font-size: 1rem;
+  }
+  .our_partners {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .our_partners .partners_heading {
+    width: 90vw;
+  }
+  .our_partners .partners_heading div {
+    width: 90vw;
+  }
+  .our_partners .partners_heading div h2 {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  body,
+  html {
+    font-size: 1rem;
+  }
+  .our_partners .partners_heading div h2 {
+    font-size: 1.6rem;
+  }
+}
 .footer {
   width: 100vw;
   padding: 30px 0;
@@ -2234,12 +2240,15 @@ html {
     height: 5.5vw;
   }
   .footer .developer {
-    width: 100vw;
+    width: 90vw;
     display: flex;
     justify-content: center;
   }
+  .footer .developer div {
+    width: 90vw;
+  }
   .footer .developer div p {
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: center;
   }
 }
@@ -2252,10 +2261,7 @@ html {
     width: 13.5vw;
     height: 6.5vw;
   }
-  .footer .developer {
-    width: 100vw;
-  }
   .footer .developer div p {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 }
